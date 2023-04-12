@@ -1,8 +1,9 @@
 package br.com.yuri.desafioappmusica.produtos;
 
+import br.com.yuri.desafioappmusica.classificacao.Classificavel;
 import br.com.yuri.desafioappmusica.modelo.Audio;
 
-public class Musica extends Audio {
+public class Musica extends Audio implements Classificavel {
 
     private String compositor;
     private String album;
@@ -39,5 +40,10 @@ public class Musica extends Audio {
 
     public void setArtista(String artista) {
         this.artista = artista;
+    }
+
+    @Override
+    public double classifica() {
+        return this.getMedia() / 2;
     }
 }

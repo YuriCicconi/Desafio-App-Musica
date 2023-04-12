@@ -7,6 +7,9 @@ public class Audio {
     private int reproducoes;
     private int curtidas;
     private double nota;
+    private double somaNotas;
+    private int totalDeNotas;
+    private int media;
 
     public String getTitulo() {
         return titulo;
@@ -38,6 +41,8 @@ public class Audio {
 
     public void setNota(double nota) {
         this.nota = nota;
+        this.somaNotas += nota;
+        totalDeNotas++;
     }
 
     public void curtir() {
@@ -46,5 +51,9 @@ public class Audio {
 
     public void reproduzir() {
         this.reproducoes++;
+    }
+
+    public double getMedia() {
+        return this.somaNotas / this.totalDeNotas;
     }
 }

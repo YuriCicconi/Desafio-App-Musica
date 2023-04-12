@@ -1,8 +1,9 @@
 package br.com.yuri.desafioappmusica.produtos;
 
+import br.com.yuri.desafioappmusica.classificacao.Classificavel;
 import br.com.yuri.desafioappmusica.modelo.Audio;
 
-public class Podcast extends Audio {
+public class Podcast extends Audio implements Classificavel {
 
     private String apresentador;
     private String tema;
@@ -21,5 +22,10 @@ public class Podcast extends Audio {
 
     public void setTema(String tema) {
         this.tema = tema;
+    }
+
+    @Override
+    public double classifica() {
+        return this.getMedia() / 2;
     }
 }
