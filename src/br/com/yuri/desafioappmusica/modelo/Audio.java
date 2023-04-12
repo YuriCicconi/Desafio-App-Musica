@@ -6,7 +6,7 @@ public class Audio {
     private int duracao;
     private int reproducoes;
     private int curtidas;
-    private int classificacao;
+    private double nota;
 
     public String getTitulo() {
         return titulo;
@@ -28,33 +28,23 @@ public class Audio {
         return reproducoes;
     }
 
-    public void setReproducoes(int reproducoes) {
-        this.reproducoes = reproducoes;
-    }
-
     public int getCurtidas() {
         return curtidas;
     }
 
-    public void setCurtidas(int curtidas) {
-        this.curtidas = curtidas;
+    public double getNota() {
+        return nota;
     }
 
-    public int getClassificacao() {
-        return classificacao;
-    }
-
-    public void setClassificacao(int classificacao) {
-        this.classificacao = classificacao;
+    public void setNota(double nota) {
+        this.nota = nota;
     }
 
     public void curtir() {
-
         this.curtidas++;
     }
 
     public void reproduzir() {
-
         this.reproducoes++;
     }
 }

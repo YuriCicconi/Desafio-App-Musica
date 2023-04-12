@@ -1,6 +1,8 @@
 package br.com.yuri.desafioappmusica.produtos;
 
-public class Podcast {
+import br.com.yuri.desafioappmusica.modelo.Audio;
+
+public class Podcast extends Audio {
 
     private String apresentador;
     private String tema;

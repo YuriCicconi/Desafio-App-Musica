@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ee431d5-ab37-4dc9-bcf2-f7ee85e1ff62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Desafio-App-Musica.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Audio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Musica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Podcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Episodio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Podcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Podcast.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +52,14 @@
       <option name="presentableId" value="Default" />
       <updated>1681301212270</updated>
     </task>
+    <task id="LOCAL-00001" summary="Primeiro commit, onde foram criadas as classes principais">
+      <created>1681302708227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681302708227</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,5 +72,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primeiro commit, onde foram criadas as classes principais" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeiro commit, onde foram criadas as classes principais" />
   </component>
 </project>
