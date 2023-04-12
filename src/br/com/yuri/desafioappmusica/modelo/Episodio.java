@@ -10,13 +10,14 @@ public class Episodio implements Classificavel {
     private String convidado;
     private Podcast podcast;
     private int reproducoes;
+    private int curtidas;
+
+    public int getCurtidas() {
+        return curtidas;
+    }
 
     public double getReproducoes() {
         return reproducoes;
-    }
-
-    public void setReproducoes(int nota) {
-        this.reproducoes = nota;
     }
 
     public int getNumero() {
@@ -51,14 +52,38 @@ public class Episodio implements Classificavel {
         this.podcast = podcast;
     }
 
+    public void curtir() {
+        this.curtidas++;
+    }
+
+    public void reproduzir() {
+        this.reproducoes++;
+    }
+
     @Override
     public double classifica() {
-        if (this.reproducoes >= 1500) {
+        if(this.getCurtidas() / this.getReproducoes() == 0.01) {
+            return 5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.009) {
+            return 4.5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.008) {
+            return 4;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.007) {
             return 3.5;
-        } else if (this.reproducoes >= 1000) {
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.006) {
+            return 3;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.005) {
             return 2.5;
-        } else {
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.004) {
+            return 2;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.003) {
+            return 1.5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.002) {
             return 1;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.001) {
+            return 0.5;
+        } else {
+            return 0;
         }
     }
 }

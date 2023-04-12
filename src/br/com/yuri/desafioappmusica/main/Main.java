@@ -13,28 +13,42 @@ public class Main {
         Episodio ep = new Episodio();
         Recomedacao recomendacao = new Recomedacao();
 
+        enterSandman.setTitulo("Enter Sandman");
         enterSandman.setGenero("Rock");
         enterSandman.setArtista("Metallica");
         enterSandman.setCompositor("James Hetfield + 2");
         enterSandman.setDuracao(331);
         enterSandman.setAlbum("Metallica");
-        enterSandman.setNota(10);
-        enterSandman.setNota(8.4);
-        enterSandman.setNota(6.5);
+
+        for (int i = 0; i < 1000; i++) {
+            enterSandman.reproduzir();
+        }
+
+        for (int i = 0; i < 8; i++) {
+            enterSandman.curtir();
+        }
 
         podcast.setApresentador("João da Silva");
         podcast.setTema("Comédia");
         podcast.setDuracao(180);
         podcast.setTitulo("Comédia com João");
-        podcast.setNota(10);
-        podcast.setNota(8);
-        podcast.setNota(3);
+
+        for (int i = 0; i < 2500; i++) {
+            podcast.reproduzir();
+        }
 
         ep.setConvidado("José Ferreira");
         ep.setNumero(1);
         ep.setDuracao(185);
         ep.setPodcast(podcast);
-        ep.setReproducoes(1000);
+
+        for (int i = 0; i < 1000; i++) {
+            ep.reproduzir();
+        }
+
+        for (int i = 0; i < 3; i++) {
+            ep.curtir();
+        }
 
         recomendacao.recomendar(enterSandman);
         System.out.println("=================================");

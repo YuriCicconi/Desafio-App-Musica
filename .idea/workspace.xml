@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee431d5-ab37-4dc9-bcf2-f7ee85e1ff62" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/classificacao/Recomedacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/classificacao/Recomedacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Episodio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/modelo/Episodio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Podcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/yuri/desafioappmusica/produtos/Podcast.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681305371923</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adicionda lógica para não permitir notas maiores que 10 nem menores que 0">
+      <created>1681305536280</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681305536280</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +100,7 @@
     <MESSAGE value="Primeiro commit, onde foram criadas as classes principais" />
     <MESSAGE value="Adicionando nova classe Episodio e testando instancias de todas as classes" />
     <MESSAGE value="Adicionada interface classificavel e classe Recomendacao" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionada interface classificavel e classe Recomendacao" />
+    <MESSAGE value="Adicionda lógica para não permitir notas maiores que 10 nem menores que 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionda lógica para não permitir notas maiores que 10 nem menores que 0" />
   </component>
 </project>

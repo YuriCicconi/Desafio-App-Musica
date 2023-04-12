@@ -44,6 +44,28 @@ public class Musica extends Audio implements Classificavel {
 
     @Override
     public double classifica() {
-        return this.getMedia() / 2;
+        if(this.getCurtidas() / this.getReproducoes() == 0.01) {
+            return 5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.009) {
+            return 4.5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.008) {
+            return 4;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.007) {
+            return 3.5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.006) {
+            return 3;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.005) {
+            return 2.5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.004) {
+            return 2;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.003) {
+            return 1.5;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.002) {
+            return 1;
+        } else if (this.getCurtidas() / this.getReproducoes() == 0.001) {
+            return 0.5;
+        } else {
+            return 0;
+        }
     }
 }

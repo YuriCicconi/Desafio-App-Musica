@@ -4,12 +4,8 @@ public class Audio {
 
     private String titulo;
     private int duracao;
-    private int reproducoes;
-    private int curtidas;
-    private double nota;
-    private double somaNotas;
-    private int totalDeNotas;
-    private int media;
+    private double reproducoes;
+    private double curtidas;
 
     public String getTitulo() {
         return titulo;
@@ -27,26 +23,12 @@ public class Audio {
         this.duracao = duracao;
     }
 
-    public int getReproducoes() {
+    public double getReproducoes() {
         return reproducoes;
     }
 
-    public int getCurtidas() {
+    public double getCurtidas() {
         return curtidas;
-    }
-
-    public double getNota() {
-        return nota;
-    }
-
-    public void setNota(double nota) {
-        if (nota <= 10 && nota >= 0) {
-            this.nota = nota;
-            this.somaNotas += nota;
-            totalDeNotas++;
-        } else {
-            System.out.println("Adicione uma nota válida");
-        }
     }
 
     public void curtir() {
@@ -55,9 +37,5 @@ public class Audio {
 
     public void reproduzir() {
         this.reproducoes++;
-    }
-
-    public double getMedia() {
-        return this.somaNotas / this.totalDeNotas;
     }
 }

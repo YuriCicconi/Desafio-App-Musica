@@ -1,5 +1,7 @@
 package br.com.yuri.desafioappmusica.classificacao;
 
+import br.com.yuri.desafioappmusica.produtos.Musica;
+
 public class Recomedacao {
 
     public void recomendar(Classificavel c) {
