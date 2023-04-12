@@ -40,9 +40,13 @@ public class Audio {
     }
 
     public void setNota(double nota) {
-        this.nota = nota;
-        this.somaNotas += nota;
-        totalDeNotas++;
+        if (nota <= 10 && nota >= 0) {
+            this.nota = nota;
+            this.somaNotas += nota;
+            totalDeNotas++;
+        } else {
+            System.out.println("Adicione uma nota válida");
+        }
     }
 
     public void curtir() {
